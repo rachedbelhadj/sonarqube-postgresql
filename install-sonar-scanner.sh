@@ -19,6 +19,9 @@ if [ -d "/var/opt/sonar-scanner-4.0.0.1744-linux" ];then
 fi
 sudo mv /tmp/sonar-scanner-4.0.0.1744-linux /var/opt
 
+echo "Creat link"
+sudo ln -s /var/opt/sonar-scanner-4.0.0.1744-linux/bin/sonar-scanner /usr/local/bin/sonar-scanner
+
 echo "Installation completed successfully."
 
 echo "You can use sonar-scanner!"
