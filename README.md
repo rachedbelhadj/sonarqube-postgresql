@@ -29,7 +29,9 @@ sudo ./install-sonar-scanner.sh
 
 ## create link: sonar-scanner
 
+```
 sudo ln -s /var/opt/sonar-scanner-4.0.0.1744-linux/bin/sonar-scanner /usr/local/bin/sonar-scanner
+```
 
 ## Execute Scann
 
