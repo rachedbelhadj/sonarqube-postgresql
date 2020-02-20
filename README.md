@@ -1,11 +1,11 @@
-# Docker Compose file for Sonarqube with PostgreMysql
+# Docker Compose file for Sonarqube with PostgreSQL
 
 ## Installation Docker
 
 1. Install docker and docker-compose
 1. Clone the repository
 
-## create folders for sonarqube files and postgres
+## create folders for sonarqube files and PostgreSQL
 1. sudo mkdir -p /var/sonarqube/{conf,data,logs,extensions}
 1. sudo chown -R 999:999 /var/sonarqube
 1. sudo mkdir -p /var/sonarqube/postgres
