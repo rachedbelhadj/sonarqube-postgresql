@@ -9,16 +9,16 @@ services:
      - POSTGRES_USER=sonar
      - POSTGRES_PASSWORD=sonar
   sonarqube:
-    image: sonarqube:6.7-community
+    image: sonarqube:latest
     ports:
       - 9000:9000
       - 9092:9092
     restart: unless-stopped
     volumes:
-      - /var/sonarqube/conf:/opt/sonarqube/conf
-      - /var/sonarqube/data:/opt/sonarqube/data
-      - /var/sonarqube/logs:/opt/sonarqube/logs
-      - /var/sonarqube/extensions:/opt/sonarqube/extensions
+      - ./var/sonarqube/conf:/opt/sonarqube/conf
+      - ./var/sonarqube/data:/opt/sonarqube/data
+      - ./var/sonarqube/logs:/opt/sonarqube/logs
+      - ./var/sonarqube/extensions:/opt/sonarqube/extensions
     environment:
       - SONARQUBE_HOME=/opt/sonarqube
       - SONARQUBE_JDBC_USERNAME=sonar
