@@ -28,3 +28,13 @@ sudo ln -s /var/opt/sonar-scanner-4.0.0.1744-linux/bin/sonar-scanner /usr/local/
 ## Execute Scann
 
 sonar-scanner -D sonar.login=34e4f49bbfff24db5b48bce99a71fc5b5f4da6fb
+
+## Alternatives to sonar-project.properties
+If a sonar-project.properties file cannot be created in the root directory of the project, there are several alternatives:
+
+The properties can be specified directly through the command line. Ex:
+
+sonar-scanner -Dsonar.projectKey=myproject -Dsonar.sources=src1
+The property project.settings can be used to specify the path to the project configuration file (this option is incompatible with the sonar.projectBaseDir property). Ex:
+
+sonar-scanner -Dproject.settings=../myproject.properties
