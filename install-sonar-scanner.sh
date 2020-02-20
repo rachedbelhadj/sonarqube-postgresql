@@ -9,15 +9,15 @@ wget -q https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-sc
 echo "Download completed."
 
 echo "Unziping downloaded file..."
-unzip sonar-scanner-cli-3.2.0.1227-linux.zip
+unzip sonar-scanner-cli-4.0.0.1744-linux.zip
 echo "Unzip completed."
-rm sonar-scanner-cli-3.2.0.1227-linux.zip
+rm sonar-scanner-cli-4.0.0.1744-linux.zip
 
 echo "Installing to opt..."
-if [ -d "/var/opt/sonar-scanner-3.2.0.1227-linux" ];then
-    sudo rm -rf /var/opt/sonar-scanner-3.2.0.1227-linux
+if [ -d "/var/opt/sonar-scanner-cli-4.0.0.1744-linux" ];then
+    sudo rm -rf /var/opt/sonar-scanner-cli-4.0.0.1744-linux
 fi
-sudo mv sonar-scanner-3.2.0.1227-linux /var/opt
+sudo mv sonar-scanner-cli-4.0.0.1744-linux /var/opt
 
 echo "Installation completed successfully."
 
