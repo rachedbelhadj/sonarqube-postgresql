@@ -15,3 +15,8 @@
 1. cd sonarqube-postgres
 1. Run `docker-compose up -d`
 1. Open browser and browse to <http://youripaddress:9000/>
+
+## Installation Sonar Scanner
+
+1. sudo chmod +x install-sonar-scanner.sh
+1. sudo ./install-sonar-scanner.sh
