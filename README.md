@@ -27,16 +27,11 @@ sudo chmod +x install-sonar-scanner.sh
 sudo ./install-sonar-scanner.sh
 ```
 
-## create link: sonar-scanner
-
-```
-sudo ln -s /var/opt/sonar-scanner-4.0.0.1744-linux/bin/sonar-scanner /usr/local/bin/sonar-scanner
-```
 
 ## Execute Scann
 
 ```
-sonar-scanner -D sonar.login=34e4f49bbfff24db5b48bce99a71fc5b5f4da6fb
+sonar-scanner -D sonar.login=toke_creatred_sonarcube
 
 ```
 
