@@ -20,3 +20,7 @@
 
 1. sudo chmod +x install-sonar-scanner.sh
 1. sudo ./install-sonar-scanner.sh
+
+## create link 
+
+sudo ln -s /var/opt/sonar-scanner-4.0.0.1744-linux/bin/sonar-scanner /usr/local/bin/sonar-scanner
