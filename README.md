@@ -8,9 +8,7 @@
 ## create folders for sonarqube files and PostgreSQL
 
 ```
-sudo mkdir -p /var/sonarqube/{conf,data,logs,extensions}
-sudo chown -R 999:999 /var/sonarqube
-sudo mkdir -p /var/sonarqube/postgres
+sudo chown -R 999:999 ./var/sonarqube
 
 ```
 
